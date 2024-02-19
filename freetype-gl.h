@@ -9,7 +9,6 @@
 /* Mandatory */
 #include "platform.h"
 #include "opengl.h"
-#include "vec234.h"
 #include "vector.h"
 #include "texture-atlas.h"
 #include "texture-font.h"

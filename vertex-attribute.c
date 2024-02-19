@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "vec234.h"
+#include "mathc.h"
 #include "platform.h"
 #include "vertex-attribute.h"
 #include "ftgl-utils.h"

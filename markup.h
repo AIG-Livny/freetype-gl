@@ -11,7 +11,7 @@ extern "C" {
 #endif
 
 #include "texture-font.h"
-#include "vec234.h"
+#include "mathc.h"
 
 #ifdef __cplusplus
 namespace ftgl {
@@ -95,12 +95,12 @@ typedef struct markup_t
     /**
      * Text color.
      */
-    vec4 foreground_color;
+    struct vec4 foreground_color;
 
     /**
      * Background color.
      */
-    vec4 background_color;
+    struct vec4 background_color;
 
     /**
      * Whether outline is active.
@@ -110,7 +110,7 @@ typedef struct markup_t
     /**
      * Outline color.
      */
-    vec4 outline_color;
+    struct vec4 outline_color;
 
     /**
      * Whether underline is active.
@@ -120,7 +120,7 @@ typedef struct markup_t
     /**
      * Underline color.
      */
-    vec4 underline_color;
+    struct vec4 underline_color;
 
     /**
      * Whether overline is active.
@@ -130,7 +130,7 @@ typedef struct markup_t
     /**
      * Overline color.
      */
-    vec4 overline_color;
+    struct vec4 overline_color;
 
     /**
      * Whether strikethrough is active.
@@ -140,7 +140,7 @@ typedef struct markup_t
     /**
      * Strikethrough color.
      */
-    vec4 strikethrough_color;
+    struct vec4 strikethrough_color;
 
     /**
      * Pointer on the corresponding font (family/size/bold/italic)

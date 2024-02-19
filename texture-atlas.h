@@ -25,7 +25,7 @@ extern "C" {
 #endif
 
 #include "vector.h"
-#include "vec234.h"
+#include "mathc.h"
 
 #ifdef __cplusplus
 namespace ftgl {
@@ -159,7 +159,7 @@ typedef struct texture_atlas_t
  *  @return       Coordinates of the allocated region
  *
  */
-  ivec4
+  struct vec4i
   texture_atlas_get_region( texture_atlas_t * self,
                             const size_t width,
                             const size_t height );

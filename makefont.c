@@ -4,7 +4,7 @@
  * file `LICENSE` for more details.
  */
 #include "opengl.h"
-#include "vec234.h"
+#include "mathc.h"
 #include "vector.h"
 #include "freetype-gl.h"
 
