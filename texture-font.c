@@ -410,7 +410,8 @@ texture_font_new_from_file(texture_atlas_t *atlas, const float pt_size,
     self->location = TEXTURE_FONT_FILE;
     self->filename = strdup(filename);
     self->mode = mode_default;
-    
+    self->need_update = true;
+
     if (texture_font_init(self)) {
         texture_font_delete(self);
         return NULL;
@@ -1150,6 +1151,7 @@ cleanup_stroker:
     texture_font_generate_kerning( self, &self->library->library, &self->face );
 
     texture_font_close( self, MODE_AUTO_CLOSE, MODE_AUTO_CLOSE );
+    self->need_update = true;
 
     return 1;
 }

@@ -415,6 +415,8 @@ typedef struct texture_font_t
      * factor to scale font coordinates
      */
     float scale;
+
+    bool need_update;
 } texture_font_t;
 
 /**
